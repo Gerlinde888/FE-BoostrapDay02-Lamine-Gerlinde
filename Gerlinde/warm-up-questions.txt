@@ -3,13 +3,76 @@ Please discuss the following questions with your pair partner:
 
 Do you know what the default font stack in Bootstrap is?
 
+    Bootstrap utilizes a “native font stack” or “system font stack” for optimum text rendering on every device and OS. These system fonts have been designed specifically with today’s devices in mind, with improved rendering on screens, variable font support, and more. Read more about native font stacks in this Smashing Magazine article.
+
+    $font-family-sans-serif:
+    // Cross-platform generic font family (default user interface font)
+    system-ui,
+    // Safari for macOS and iOS (San Francisco)
+    -apple-system,
+    // Windows
+    "Segoe UI",
+    // Android
+    Roboto,
+    // Basic web fallback
+    "Helvetica Neue", Arial,
+    // Linux
+    "Noto Sans",
+    "Liberation Sans",
+    // Sans serif fallback
+    sans-serif,
+    // Emoji fonts
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+
+    Note that because the font stack includes emoji fonts, many common symbol/dingbat unicode characters will be rendered as multi-colored pictographs. Their appearance will vary, depending on the style used in the browser/platform’s native emoji font, and they won’t be affected by any CSS color styles.
+
+    This font-family is applied to the <body> and automatically inherited globally throughout Bootstrap. To switch the global font-family, update $font-family-base and recompile Bootstrap.
+
+
+
 What do we need to do to get nice looking tables in Bootstrap?
 
+    Due to the widespread use of <table> elements across third-party widgets like calendars and date pickers, Bootstrap’s tables are opt-in. Add the base class .table to any <table>, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.
+
+    Using the most basic table markup, here’s how .table-based tables look in Bootstrap.
+
+
+
 How many Bootstrap layout components do you know?
+    There are a lot of components for the layout of the three dimensions:
+    - vertical (Containers)
+    - horizontal (Containers)
+    - layers (z-index)
+
+    Components and options for laying out your Bootstrap project, 
+    including wrapping containers, 
+    powerful grid system, 
+    a flexible media object, 
+    and responsive utility classes.
+
+    there are: Alerts, Badge, Breadcrumb, Buttons, Button group, Card, Carousel, Collapse, Dropdowns, Forms, Input group, Jumbotron, List group, Modal, Navs, Navbar, Pagination, Popovers, Progress, Scrollspy, Tooltips, ...
+
 
 Bootstrap provides a few different options for styling navigation elements, how many do you know?
 
+    Horizontal alignment
+    Vertical alignment
+    Tabs
+    Pills
+    Fill and justify
+    Regarding accessibility
+    Using Dropdowns
+    Javascript behavior
+
+    The Navbar, the responsive navigation header of bootstrap.
+
+
 What is the purpose of the modal window?
+
+
+    Sometimes also known as a modal popup box, a modal dialog, a modal page, or simply a modal, typically a modal window takes the form of a graphic element that appears in front of all other page content. A modal window gets its name from the fact that triggering of the window is accompanied by a change in mode.
+
 
 Basic : Adding Navbars
 We will continue to improve our example that we re-used on day 1  (from the section "Basic Bootstrap Template") our list of technologies that we know so far - feel free to add Bootstrap components now! Create several different versions of this template with some navbars: use fixed top navbar or fixed bottom navbar in the first version, and create also a responsive inverted/dark navbar in a second version. Feel free to create a few more versions based on your inspiration.
