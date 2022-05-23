@@ -1,0 +1,15 @@
+Warm up questions
+Please discuss the following questions with your pair partner:
+
+Do you know what the default font stack in Bootstrap is?
+
+What do we need to do to get nice looking tables in Bootstrap?
+
+How many Bootstrap layout components do you know?
+
+Bootstrap provides a few different options for styling navigation elements, how many do you know?
+
+What is the purpose of the modal window?
+
+Basic : Adding Navbars
+We will continue to improve our example that we re-used on day 1  (from the section "Basic Bootstrap Template") our list of technologies that we know so far - feel free to add Bootstrap components now! Create several different versions of this template with some navbars: use fixed top navbar or fixed bottom navbar in the first version, and create also a responsive inverted/dark navbar in a second version. Feel free to create a few more versions based on your inspiration.
