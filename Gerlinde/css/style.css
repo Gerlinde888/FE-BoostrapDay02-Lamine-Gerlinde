@@ -26,7 +26,8 @@
         padding-right:var(--bs-gutter-x,.75rem);
         padding-left:var(--bs-gutter-x,.75rem);
         margin-right:auto;
-        margin-left:auto
+        margin-left:auto;
+        align-self: center;
     }
     .my-container-fluid-left {
 
@@ -58,6 +59,7 @@
     list-style:none;
     border: 1px solid rgb(149,134,134);
 }
+
 .my-flex-column{
     flex-direction:column!important;
     justify-self: left;

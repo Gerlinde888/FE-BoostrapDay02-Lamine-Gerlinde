@@ -13,19 +13,6 @@
   </head>
   <body>
 
-    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-    </div>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-    </div>
-
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -33,8 +20,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Hidden brand</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+      
+      <div class="my-container-fluid">
+        <ul class="nav my-nav justify-content-end bg-grey">
+          <li class="nav-item">
+            <a class="my-nav-link  pt-0" href="#">Plot</a>
+          </li> 
+          <li class="nav-item">
+            <a class="my-nav-link active  pt-0" aria-current="page" href="#">Actors</a>
+          </li>
+          <li class="nav-item">
+            <a class="my-nav-link  pt-0" href="#">Reviews</a>
+          </li>
+        </ul>
+      <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -44,18 +44,62 @@
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
-      </ul>
-      <form class="d-flex">
+      </ul> -->
+
+      <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form> -->
+      </div>
     </div>
   </div>
 </nav>
 
+<div class="container">
+  <nav class="navbar justify-content-left navbar-expand-lg navbar-light bg-grey">
+    <div class="container-fluid">
+      <ul class="nav my-nav my-flex-column bg-red-grey">
+        <li class="nav-item">
+          <a class="my-nav-link active" aria-current="page" href="#">Actor 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="my-nav-link" href="#">Actor 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="my-nav-link" href="#">Actor 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="my-nav-link" href="#">Actor 4</a>
+        </li>
+        <li class="nav-item">
+          <a class="my-nav-link" href="#">Actor 5</a>
+        </li>
+        <li class="nav-item">
+          <a class="my-nav-link" href="#">Actor 6</a>
+        </li>
+        <li class="nav-item">
+          <a class="my-nav-link" href="#">Actor 7</a>
+        </li>
+      </ul>
+       <div class="my-container-content align-items-center justify-content-center"><div class="my-content justify-content-center ">
+        <ul class="nav my-nav my-flex-column flex-direction-center bg-grey">
+          <li class="nav-item">
+            <a class="my-nav-link active" aria-current="page" href="#">Actor 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="my-nav-link" href="#">
+              <div class="my-rectangle"> 
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div></div>
+    </div>
+  </nav>
 
+</div>
 
-
+ANDERES DESIGN
 
 <div class="my-container-fluid">
         <ul class="nav my-nav justify-content-end bg-grey">
@@ -97,8 +141,8 @@
       <div class="me-3 nav-fill">
         
         <div class="my-content justify-content-center ">
-          <ul class="nav my-nav my-flex-column bg-grey">
-            <li class="nav-item">
+          <ul class="nav my-nav my-flex-column  bg-grey">
+            <li class="nav-item justify-content-center">
               <a class="my-nav-link active" aria-current="page" href="#">Actor 3</a>
             </li>
             <li class="nav-item">
